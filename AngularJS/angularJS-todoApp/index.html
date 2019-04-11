@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="todoApp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title> To-Do List </title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+	<todo-list></todo-list>
+
+
+<!-- <section>
+	<h1>To-Do List</h1>
+	<p>A place to store the things you have to do!</p>
+
+	<input type="search" data-ng-model="search.text" placeholder="Filter Your To Dos">
+
+	<ol>
+		<li data-ng-animate="'animate'" data-ng-repeat="task in todos | filter:search:strict">
+			<label data-ng-click="task.completed = !task.completed">
+				<span ng-class="{ completed: task.completed }"><a class="complete" ng-if="!task.completed" href="#" >Complete</a>
+          {{ task.text }} </span>
+          <a class="edit" href="javascript:;" data-ng-click="edit(task, $index)">Edit</a>
+          <button class="remove-btn" ng-click="removeTask(task)">X</button>
+
+			</label>
+		</li>
+	</ol>
+
+	<form data-ng-submit="save()">
+		<input type="text" data-ng-model="addTask" placeholder="Add Your To Do">
+		<input type="hidden" data-ng-model="completed" value="">
+		<input type="hidden" data-ng-model="index" value="">
+		<input type="submit" value="Add" id="add-button">
+	</form>
+</section> -->
+
+<script src="https://code.angularjs.org/1.7.8/angular.js"></script>
+<script src="app.module.js"></script>
+<script src="app.controller.js"></script>
+<script src="components/todo-list/todo-list.js"></script>
+<!-- <script src="components/my-child/myChild.js"></script> -->
+
+</body>
+</html>
